@@ -1,333 +1,202 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>USMS</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
-        <!-- Place favicon.ico in the root directory -->
-
-        <!-- all css here -->
-        <!-- bootstrap v3.3.7 css -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <!-- animate css -->
-        <link rel="stylesheet" href="assets/css/animate.css">
-        <!-- owl.carousel.2.0.0-beta.2.4 css -->
-        <link rel="stylesheet" href="assets/css/owl.carousel.css">
-        <!-- font-awesome v4.6.3 css -->
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-        <!-- magnific-popup.css -->
-        <link rel="stylesheet" href="assets/css/magnific-popup.css">
-        <!-- flaticon.css -->
-        <link rel="stylesheet" href="assets/css/flaticon.css">
-        <!-- slicknav.min.css -->
-        <link rel="stylesheet" href="assets/css/slicknav.min.css">
-        <!-- style css -->
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <!-- responsive css -->
-        <link rel="stylesheet" href="assets/css/responsive.css">
-        <!-- modernizr css -->
-        <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- header-area start -->
-        <header class="header-area" id="sticky-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="header-bottom">
-                             <div class="row">
-                                <div class="col-md-4 col-sm-9 col-xs-6">
-                                    <div class="logo">
-                                        <a href="index.html">
-                                            <img src="assets/images/logo.png" alt="" id="logoResize" (width:auto, height:45px)>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-8 hidden-sm hidden-xs">
-                                    <div class="mainmenu text-right">
-                                        <ul id="navigation">
-                                            <li class="active"><a href="index.html">HOME</a></li>
-                                            <li><a href="#section2" data-scroll>How It Works</a></li>
-                                            <li><a href="#section3" data-scroll>Features</a></li>
-                                            <li><a href="#section4" data-scroll>Pricing</a></li>
-                                            <li><a href="contact.html">CONTACT US</a></li>
-                                            <li><a href="login.html"><button type="button" class="btn btn-success">LOGIN</button></a></li>   
-                                            <li><a href="register.html"><button type="button" class="btn btn-primary">SIGN UP</button></a></li>   
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-xs-2 col-sm-1 hidden-md hidden-lg">
-                                    <div class="responsive-menu-wrap floatright"></div>
-                                </div>
-                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- header-area end -->
-
-        <!-- slider-area start -->
-        <div class="slider-area">
-            <div class="slider-active">
-                <div class="slider-items">
-                    <img src="assets/images/slider/4.jpg" alt="slider" class="slider">
-                    <div class="single-slider single-slider2">
-                        <div class="container">
+{% extends "layout.html" %}
+{% block content %}
+    <!-- header-area start -->
+    <header class="header-area" id="sticky-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="header-bottom">
                             <div class="row">
-                                <div class="col-sm-offset-2 col-sm-10 col-xs-12 col-md-7 col-md-offset-5 text-right">
-                                    <h2>Powerful SMS Communication in an easy way</h2>
-                                    <a href="#">Create Test Account</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-items">
-                    <img src="assets/images/slider/2.jpg" alt="slider" class="slider">
-                    <div class="single-slider">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-7 col-sm-10 col-xs-12">
-                                    <h2>Powerful SMS Communication in an easy way</h2>
-                                    <a href="#">Create Test Account</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>                  
-            </div>
-        </div>
-        <!-- slider-area end -->
-        
-        <!-- how-usms-works-area start -->
-        <div class="how-usms-area ptb-80 bg-1" id="section2">
-            <div class="container">
-                <div class="row">
-                    <div class="how-usms-wrap">
-                        <span class="section-title katikati"><h3>How USMS Works </h3></span>
-                        <div class="how-center">
-                            <p>Usms is a messaging tool that makes it fast and easy for businesses to communicate with their customers and employees.</p>
-                            <p>This platform has helped thousands of organizations use text message marketing to engage their followers, enhance their marketing strategies and boost revenue.</p>
-                            <p>Quickly and safely communicate with your followers using our affordable and customizable features such as mobile coupons, keyword auto responders, and group messaging.</p>
-                            <p>With more than 99% of text messages being opened and read within minutes of receipt, driving business has never been easier.</p>
-                        </div>                        
-                        <div>
-                            <span class="section-title katikati"><h3>TRY OUR SMS SERVICE NOW!</h3></span>
-                            <div class="kati">
-                                    <p>Send a free message to your mobile phone.</p>                                    
-                                    <form action="#">
-                                        <input type="text" placeholder="Enter Phone Number">
-                                    </form>
-                                    <br>
-                                    <a href="#">Send Message</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- HOW-USMS-WORKS end -->
-        <!-- why-usms-area start -->
-        <div class="why-usms bg-2" id="section3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-                        <div class="section-title text-center">
-                            <h2>Why USMS</h2>                            
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 col-2 col-sm-6 col-xs-12">
-                        <div class="why-usms-wrap">
-                            <div class="why-usms-icon">
-                                <img src="assets/images/icon/text.png">
-                            </div>
-                            <div class="why-usms-info">
-                                <h3>It's Effective</h3>
-                                <span>Approximately 90% of text messages are read within three minutes of delivery. People pay attention to SMS.</span>                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-2 col-sm-6 col-xs-12">
-                        <div class="why-usms-wrap">
-                            <div class="why-usms-icon">
-                                    <img src="assets/images/icon/usms.png">
-                                </div>
-                            <div class="why-usms-info">
-                                <h3>It's Simple</h3>
-                                <span>Bulk SMS makes it easy to send messages to individuals or groups without requiring an app download. It just works.</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-2 col-sm-6 col-xs-12">
-                        <div class="why-usms-wrap">
-                            <div class="why-usms-icon">
-                                    <img src="assets/images/icon/sms.png">
-                                </div>
-                            <div class="why-usms-info">
-                                <h3>It's Flexible</h3>
-                                <span>Bulk SMS can scale with your business usage and accommodate your changing communication needs.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- why-usms-area end -->
-        <!-- pricing-area start -->
-        <div class="pricing-area bg-1" id="section4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-                        <div class="section-title text-center">
-                            <h2>Simple Pricing</h2>
-                            <p>No hidden costs, No set up fee,</p>
-                            <p>Pay only for sent messages.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row how-center-3">
-                    <div class="col-2 col-md-4 col-sm-6 col-xs-12">
-                        <div class="pricing-wrap text-center">                            
-                            <span>No expiration date for all payments made <br> (open-ended validity).</span>
-                        </div>
-                    </div>
-                    <div class="col-2 col-md-4 col-sm-6 col-xs-12">
-                        <div class="pricing-wrap text-center active">
-                            <span>Diverse, simple and convenient <br> (Mpesa, cheques,credit card, bank transfer).</span>
-                        </div>
-                    </div>
-                    <div class="col-2 col-md-4 col-sm-6 col-xs-12">
-                        <div class="pricing-wrap text-center">
-                            <span>Just Kshs 100 minimum payment.
-                                <br><br>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- pricing-area end -->
+                            <div class="col-md-4 col-sm-9 col-xs-6">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="" id="logoResize" width="auto" height="45px">
 
-        <!-- contact-us start -->
-        <div class="discount-area parallax black-opacity"  data-speed="5" data-bg-image="assets/images/bg/5.jpg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-                        <div class="discount-wrap how-center-2">
-                            <h2>Contact Us</h2>
-                            <div>Feel free to email us to provide some feedback, give us suggestions for <br> new features, for support or to just say hello!</div>
-                            <br>
-                            <a href="contact.html">Reach Out</a>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-8 hidden-sm hidden-xs">
+                                <div class="mainmenu text-right">
+                                    <ul id="navigation">
+                                        <li class="active"><a href="index.html">HOME</a></li>
+                                        <li><a href="#section2" data-scroll>How It Works</a></li>
+                                        <li><a href="#section3" data-scroll>Features</a></li>
+                                        <li><a href="#section4" data-scroll>Pricing</a></li>
+                                        <li><a href="contact.html">CONTACT US</a></li>
+                                        <li><a href="login.html"><button type="button" class="btn btn-success">LOGIN</button></a></li>   
+                                        <li><a href="register.html"><button type="button" class="btn btn-primary">SIGN UP</button></a></li>   
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-2 col-sm-1 hidden-md hidden-lg">
+                                <div class="responsive-menu-wrap floatright"></div>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-area end -->
+
+    <!-- slider-area start -->
+    <div class="slider-area">
+        <div class="slider-active">
+            <div class="slider-items">
+                <img src="{{ url_for('static', filename='images/slider/4.jpg') }}" alt="slider" class="slider">
+                <div class="single-slider single-slider2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-offset-2 col-sm-10 col-xs-12 col-md-7 col-md-offset-5 text-right">
+                                <h2>Powerful SMS Communication in an easy way</h2>
+                                <a href="#">Create Test Account</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-items">
+                <img src="{{ url_for('static', filename='images/slider/2.jpg') }}" alt="slider" class="slider">
+                <div class="single-slider">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-7 col-sm-10 col-xs-12">
+                                <h2>Powerful SMS Communication in an easy way</h2>
+                                <a href="#">Create Test Account</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>                  
+        </div>
+    </div>
+    <!-- slider-area end -->
+    
+    <!-- how-usms-works-area start -->
+    <div class="how-usms-area ptb-80 bg-1" id="section2">
+        <div class="container">
+            <div class="row">
+                <div class="how-usms-wrap">
+                    <span class="section-title katikati"><h3>How USMS Works </h3></span>
+                    <div class="how-center">
+                        <p>Usms is a messaging tool that makes it fast and easy for businesses to communicate with their customers and employees.</p>
+                        <p>This platform has helped thousands of organizations use text message marketing to engage their followers, enhance their marketing strategies and boost revenue.</p>
+                        <p>Quickly and safely communicate with your followers using our affordable and customizable features such as mobile coupons, keyword auto responders, and group messaging.</p>
+                        <p>With more than 99% of text messages being opened and read within minutes of receipt, driving business has never been easier.</p>
+                    </div>                        
+                    <div>
+                        <span class="section-title katikati"><h3>TRY OUR SMS SERVICE NOW!</h3></span>
+                        <div class="kati">
+                                <p>Send a free message to your mobile phone.</p>                                    
+                                <form action="#">
+                                    <input type="text" placeholder="Enter Phone Number">
+                                </form>
+                                <br>
+                                <a href="#">Send Message</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- contact-us end -->
-
-        <!-- footer-area start -->
-        <footer class="footer-area bg-2">
-            <div class="footer-top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-2 col-md-3 col-sm-6 col-xs-12">
-                            <div class="footer-widget footer-content">
-                                <h2>About US</h2>
-                                <ul>Connect with us</ul>
-                                <ul>
-                                    <li><i class="fa fa-phone"></i> (254)702 423131 </li>
-                                    <li><i class="fa fa-envelope"></i> info@usms.co.ke</li>
-                                    <li><i class="fa fa-map-marker"></i> Westlands, Nairobi</li>
-                                </ul>
-                            </div>
+    </div>
+    <!-- HOW-USMS-WORKS end -->
+    <!-- why-usms-area start -->
+    <div class="why-usms bg-2" id="section3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                    <div class="section-title text-center">
+                        <h2>Why USMS</h2>                            
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-2 col-sm-6 col-xs-12">
+                    <div class="why-usms-wrap">
+                        <div class="why-usms-icon">
+                            <img src="{{ url_for('static', filename='images/icon/text.png') }}">
                         </div>
-                        <div class="col-2 col-md-3 col-sm-6 col-xs-12">
-                            <div class="footer-widget footer-time">
-                                <h2>Our Working Time</h2>
-                                <ul>
-                                    <li>MON <span class="pull-right">08:00 AM - 17:00 PM</span></li>
-                                    <li>TUE <span class="pull-right">08:00 AM - 17:00 PM</span></li>
-                                    <li>WED <span class="pull-right">08:00 AM - 17:00 PM</span></li>
-                                    <li>THU <span class="pull-right">08:00 AM - 17:00 PM</span></li>
-                                    <li>FRI <span class="pull-right">08:00 AM - 17:00 PM</span></li>
-                                    <li>SAT <span class="pull-right color">Weekend</span></li>
-                                    <li>SUN <span class="pull-right color">Weekend</span></li>
-                                    
-                                </ul>
-                            </div>
+                        <div class="why-usms-info">
+                            <h3>It's Effective</h3>
+                            <span>Approximately 90% of text messages are read within three minutes of delivery. People pay attention to SMS.</span>                                
                         </div>
-                        <div class="col-2 col-md-2 col-sm-6 col-xs-12">
-                            <div class="footer-widget footer-menu">
-                                <h2>Short Link</h2>
-                                <ul>
-                                    <li><a href="login.html">Login </a></li>
-                                    <li><a href="register.html">Register </a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
-                                </ul>
-                            </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-2 col-sm-6 col-xs-12">
+                    <div class="why-usms-wrap">
+                        <div class="why-usms-icon">
+                            <img src="{{ url_for('static', filename='images/icon/usms.png') }}">
+                        </div>
+                        <div class="why-usms-info">
+                            <h3>It's Simple</h3>
+                            <span>Bulk SMS makes it easy to send messages to individuals or groups without requiring an app download. It just works.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-2 col-sm-6 col-xs-12">
+                    <div class="why-usms-wrap">
+                        <div class="why-usms-icon">
+                            <img src="{{ url_for('static', filename='images/icon/sms.png') }}">
+                        </div>
+                        <div class="why-usms-info">
+                            <h3>It's Flexible</h3>
+                            <span>Bulk SMS can scale with your business usage and accommodate your changing communication needs.</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="copyright">
-                                <p>&copy; Usms Inc 2018. All Rights Reserved</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="socil-media-icon">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
+        </div>
+    </div>
+    <!-- why-usms-area end -->
+    <!-- pricing-area start -->
+    <div class="pricing-area bg-1" id="section4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                    <div class="section-title text-center">
+                        <h2>Simple Pricing</h2>
+                        <p>No hidden costs, No set up fee,</p>
+                        <p>Pay only for sent messages.</p>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- footer-area end -->
+            <div class="row how-center-3">
+                <div class="col-2 col-md-4 col-sm-6 col-xs-12">
+                    <div class="pricing-wrap text-center">                            
+                        <span>No expiration date for all payments made <br> (open-ended validity).</span>
+                    </div>
+                </div>
+                <div class="col-2 col-md-4 col-sm-6 col-xs-12">
+                    <div class="pricing-wrap text-center active">
+                        <span>Diverse, simple and convenient <br> (Mpesa, cheques,credit card, bank transfer).</span>
+                    </div>
+                </div>
+                <div class="col-2 col-md-4 col-sm-6 col-xs-12">
+                    <div class="pricing-wrap text-center">
+                        <span>Just Kshs 100 minimum payment.
+                            <br><br>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- pricing-area end -->
 
-		<!-- all js here -->
-		<!-- jquery latest version -->
-        <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-		<!-- bootstrap js -->
-        <script src="assets/js/bootstrap.min.js"></script>
-		<!-- owl.carousel.2.0.0-beta.2.4 css -->
-        <script src="assets/js/owl.carousel.min.js"></script>
-		<!-- counterup.main.js -->
-        <script src="assets/js/counterup.main.js"></script>
-		<!-- isotope.pkgd.min.js -->
-        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-		<!-- isotope.pkgd.min.js -->
-        <script src="assets/js/isotope.pkgd.min.js"></script>
-		<!-- jquery.waypoints.min.js -->
-        <script src="assets/js/jquery.waypoints.min.js"></script>
-		<!-- jquery.magnific-popup.min.js -->
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
-		<!-- jquery.slicknav.min.js -->
-        <script src="assets/js/jquery.slicknav.min.js"></script>
-		<!-- wow js -->
-        <script src="assets/js/wow.min.js"></script>
-		<!-- plugins js -->
-        <script src="assets/js/plugins.js"></script>
-		<!-- main js -->
-        <script src="assets/js/scripts.js"></script>
-    </body>
-</html>
+    <!-- contact-us start -->
+    <div class="discount-area parallax black-opacity"  data-speed="5" data-bg-image="assets/images/bg/5.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                    <div class="discount-wrap how-center-2">
+                        <h2>Contact Us</h2>
+                        <div>Feel free to email us to provide some feedback, give us suggestions for <br> new features, for support or to just say hello!</div>
+                        <br>
+                        <a href="contact.html">Reach Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact-us end -->
+{% endblock content %}
