@@ -1,25 +1,26 @@
-from flask import Flask, render_temlate
+from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route("/")
+@app.route("/index")
 def home():
-    return render_temlate('index.html')
+    return render_template('index.html')
 
-@app.route("/")
+@app.route("/login")
 def login():
-    return render_temlate('login.html')
+    return render_template('login.html')
 
-@app.route("/")
+@app.route("/register")
 def register():
-    return render_temlate('register.html')
+    return render_template('register.html')
 
-@app.route("/")
+@app.route("/contact")
 def contact():
-    return render_temlate('contact.html')
+    return render_template('contact.html')
 
-@app.route("/")
+@app.route("/error")
 def notFound():
-    return render_temlate('404.html')
+    return render_template('404.html')
     
 
 if __name__ == '__main__':
