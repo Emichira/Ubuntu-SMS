@@ -18,7 +18,7 @@ def register():
 def contact():
     return render_template('contact.html', title='Contact')
 
-@app.route("/error")
+@app.route("/404")
 def notFound():
     return render_template('404.html', title='404')
     

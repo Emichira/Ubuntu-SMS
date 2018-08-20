@@ -452,8 +452,7 @@ ul{
 }
 .kati{
   text-align: center; 
-  font-weight: bolder;
-  
+  font-weight: bolder;  
 }
 /*---------how-usms-works-area end---------*/
 /*---------why-usms-area start---------*/
@@ -803,3 +802,8 @@ a#scrollUp i:before{
 }
 .checkout-form a.order:hover{background:#5bc0de}
 /*--------login-register-area end ----------*/
+/*--------404-area end ----------*/
+.error-wrap{
+  text-align: center;
+  margin: 15px;
+}
