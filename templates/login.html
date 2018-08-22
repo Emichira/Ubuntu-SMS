@@ -9,7 +9,7 @@
                             <div class="row">
                             <div class="col-md-3 col-sm-9 col-xs-6">
                                 <div class="logo">
-                                    <a href="index.html">
+                                    <a href="{{url_for('home')}}">
                                         <img src="{{url_for('static', filename='images/logo.png')}}" alt="" id="logoResize" (width:auto, height:45px)>
                                     </a>
                                 </div>
@@ -17,9 +17,9 @@
                             <div class="col-md-8 hidden-sm hidden-xs">
                                 <div class="mainmenu text-right">
                                     <ul id="navigation">
-                                        <li class="active"><a href="index.html">HOME</a></li>
-                                        <li><a href="contact.html">CONTACT US</a></li>
-                                        <li><a href="register.html"><button type="button" class="btn btn-primary">SIGN UP</button></a></li>   
+                                        <li class="active"><a href="{{url_for('home')}}">HOME</a></li>
+                                        <li><a href="{{url_for('contact')}}">CONTACT US</a></li>
+                                        <li><a href="{{url_for('register')}}"><button type="button" class="btn btn-primary">SIGN UP</button></a></li>   
                                     </ul>
                                 </div>
                             </div>
@@ -42,7 +42,7 @@
                     <div class="breadcumb-wrap text-center">
                         <h2>LOGIN</h2>
                         <ul>
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="{{url_for('home')}}">Home</a></li>
                             <li>/</li>
                             <li class="active"><LOGIN>Login</LOGIN></li>
                         </ul>
@@ -71,7 +71,7 @@
                                     <input type="text" class="form-control" placeholder="Your Password..."/>
                                 </div>
                             </div>
-                            <a class="order" href="dashboard/index.html">Sign In</a>
+                            <a class="order" href="{{url_for('home')}}">Sign In</a>
                             <span><a href="#">Forgot Password? </a></span>
                         </div>
                     </div>
