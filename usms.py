@@ -23,28 +23,28 @@ def dashboard():
     return render_template('dashboard/index.html', title='dashboard')
 
 @app.route("/administration")
-def admin():
-    return render_template('administration.html', title='404')
+def administration():
+    return render_template('dashboard/pages/administration.html', title='Administration')
 
-@app.route("/api-documents")
+@app.route("/api_documents")
 def api_documents():
-    return render_template('api-documents.html', title='API Documents')
+    return render_template('dashboard/pages/api-documents.html', title='API Documents')
 
-@app.route("/pages-404")
-def dashboardNotFound():
-    return render_template('pages-error-404.html', title='404')
+@app.route("/pages_404")
+def pages_404():
+    return render_template('dashboard/pages/pages-error-404.html', title='Error404')
 
-@app.route("/pages-500")
-def serviceError():
-    return render_template('pages-error-500.html', title='Service Error')
+@app.route("/pages_500")
+def pages_500():
+    return render_template('dashboard/pages/pages-error-500.html', title='Service Error')
 
-@app.route("/pages-profile")
+@app.route("/pages_profile")
 def profile():
-    return render_template('pages-profile.html', title='User Account')    
+    return render_template('dashboard/pages/pages-profile.html', title='User Account')    
 
 @app.route("/smpp")
 def smpp():
-    return render_template('smpp.html', title='User Account')
+    return render_template('dashboard/pages/smpp.html', title='smpp')
 
 if __name__ == '__main__':
     app.run(debug=True)
