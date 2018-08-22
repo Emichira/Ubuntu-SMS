@@ -14,7 +14,7 @@
             <div class="sidebar-nav">
                 <ul class="side-nav color-gray">
                     <li class="nav-header">
-                        <li><a href="../index.html"><i class="fa fa-home"></i> <span>Dashboard</span></a>
+                        <li><a href="{{url_for('dashboard')}}"><i class="fa fa-home"></i> <span>Dashboard</span></a>
                     </li>
 
                     <li class="nav-header">
@@ -73,7 +73,7 @@
                             <div class="error-box">
                                 <i class="fa fa-exclamation-triangle error-icon"></i>
                                 <h1 class="error-title">404</h1>
-                                <a href="../index.html" class="btn btn-primary btn-lg btn-rounded">Back To Dashboard</a>
+                                <a href="{{url_for('dashboard')}}" class="btn btn-primary btn-lg btn-rounded">Back To Dashboard</a>
                             </div>
                             <!-- /.error-box -->
                         </div>
