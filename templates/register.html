@@ -66,32 +66,36 @@
                             <span>Free Credits for tests.</span>
                         </div>
                         <div class="checkout-form">
+                            <form method="POST" action="">
+                                {{ form.hidden_tag() }}
                             <div class="row">
                                 <div>
                                     <p>Full Name <span>*</span></p>
-                                    <input type="text" class="form-control" placeholder="Your Full Name..."/>
+                                    {{ form.username(class="form-control form-control-lg") }}
                                 </div>
                                 <div>
-                                    <p>Email <span>*</span></p>                                        
-                                    <input type="email" class="form-control" id="exampleInputEmail13" placeholder="Your email address..." data-validation="email"/>
+                                    <p>Email <span>*</span></p> 
+                                    {{ form.email(class="form-control form-control-lg") }}                                       
                                 </div>
                                 <div>
                                     <p>Phone <span>*</span></p>
-                                    <input type="text" class="form-control" placeholder="Your phone..."/>
+                                    {{ form.phone(class="form-control form-control-lg") }}                                       
                                 </div>
                                 <div>
                                     <p>Password <span>*</span></p>
-                                    <input type="password" class="form-control" placeholder="Your password..."/>
+                                    {{ form.password(class="form-control form-control-lg") }}                                       
                                 </div>
                                 <div>
                                     <p>Confirm Password <span>*</span></p>
-                                    <input type="email" class="form-control" placeholder="Confirm your password..."/>
+                                    {{ form.confirm_password(class="form-control form-control-lg") }}                                       
                                 </div>
                             </div>
-                            <a class="order" href="{{url_for('login')}}">Sign Up</a>
+                            {{ form.submit(class="order")}}
                             <br>
                             <h6>By clicking the "Sign Up" button you are agreeing to the </h6>
                             <h6>USMS sending policy and Terms of Use</h6>
+                            <small class="text-muted">
+                                Already Have An Account? <a class="ml-2" href="{{url_for('login') }}"> Sign In</a>
                         </div>
                     </div>
                 </div>

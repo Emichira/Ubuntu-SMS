@@ -1,5 +1,8 @@
 from flask import Flask, render_template, url_for
+from forms import RegistrationForm, LoginForm
 app = Flask(__name__)
+
+app.config['SECRET_KEY'] = '18be081e801b18259fc7a92ce165329a'
 
 @app.route("/")
 @app.route("/home")
@@ -8,11 +11,13 @@ def home():
 
 @app.route("/login")
 def login():
-    return render_template('login.html', title='Login')
+    form = RegistrationForm()
+    return render_template('login.html', title='Login', form=form)
 
 @app.route("/register")
 def register():
-    return render_template('register.html', title='Register')
+    form = RegistrationForm()
+    return render_template('register.html', title='Register', form=form)
 
 @app.route("/contact")
 def contact():
