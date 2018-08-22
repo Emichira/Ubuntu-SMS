@@ -4,7 +4,7 @@ app = Flask(__name__)
 @app.route("/")
 @app.route("/home")
 def home():
-    return render_template('index.html', title='Home')
+    return render_template('index.html', title='USMS')
 
 @app.route("/login")
 def login():
@@ -20,7 +20,7 @@ def contact():
 
 @app.route("/dashboard")
 def dashboard():
-    return render_template('dashboard/index.html', title='dashboard')
+    return render_template('dashboard/index.html', title='Home')
 
 @app.route("/administration")
 def administration():
