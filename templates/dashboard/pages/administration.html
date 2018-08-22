@@ -1,89 +1,89 @@
 {% extends "dashboard/layout.html" %}
 {% block content %}
 
-<!-- ========== LEFT SIDEBAR ========== -->
-<div class="left-sidebar fixed-sidebar bg-black-300 box-shadow tour-three">
-    <div class="sidebar-content">
-        <div class="user-info closed">
-            <img src="http://placehold.it/90/c2c2c2?text=User" alt="Anne" class="img-circle profile-img">
-            <h6 class="title">Emmanuel</h6>
-            <small class="info">Account Administrator</small>
-        </div>
-        <!-- /.user-info -->
-
-        <div class="sidebar-nav">
-            <ul class="side-nav color-gray">
-                <li class="nav-header">
-                    <li><a href="{{url_for('dashboard')}}"><i class="fa fa-home"></i> <span>Dashboard</span></a>
-                </li>
-
-                <li class="nav-header">
-                    <span class="">User Administration</span>
-                </li>
-                <li><a href="#"><span>User Dashboard</span></a></li>
-
-                <li><a href="#"><span>Live Traffic Report</span></a></li>
-
-                <li><a href="#"><span>User Tree List</span></a></li>
-
-
-                <li class="nav-header">
-                    <span class="">Approvals</span>
-                </li>
-                <li><a href="#"><span>All Sender Id Request</span></a></li>
-
-                <li class="nav-header">
-                    <span class="">Settings</span>
-                </li>
-                <li><a href="#"><span>Manage Spam Keywords</span></a></li>
-
-                <li><a href="#"><span>Site Branding</span></a></li>
-
-                <li><a href="#"><span>Manage Notifications</span></a></li>
-
-                <li><a href="#"><span>Manage Custom Control</span></a></li>
-
-                <li class="nav-header">
-                    <span class="">Manage Channel</span>
-                </li>
-                <li><a href="#"><span>Long Code Channel</span></a></li>
-
-                <li><a href="#"><span>Short Code Channel</span></a></li>
-            </ul>
-        </div>
-        <!-- /.sidebar-nav -->
-    </div>
-    <!-- /.sidebar-content -->
-</div>
-<!-- /.left-sidebar -->
-
-<div class="main-page">
-    <div class="container-fluid">
-        <div class="row page-title-div">
-            <div>
-                <h2 class="title"> <a href="{{url_for('dashboard')}}">Usms Dashboard</a></h2>
+    <!-- ========== LEFT SIDEBAR ========== -->
+    <div class="left-sidebar fixed-sidebar bg-black-300 box-shadow tour-three">
+        <div class="sidebar-content">
+            <div class="user-info closed">
+                <img src="http://placehold.it/90/c2c2c2?text=User" alt="Anne" class="img-circle profile-img">
+                <h6 class="title">Emmanuel</h6>
+                <small class="info">Account Administrator</small>
             </div>
-        </div>
-        <!-- /.row -->
-        <div class="row breadcrumb-div">
-            <div class="col-sm-6">
-                <ul class="nav nav-tabs">
-                    <li><a href="{{url_for('dashboard')}}"><i class="fa fa-home"></i>SMS</a></li>
-                    <li class="active"><a href="{{url_for('administration')}}">Administration</a></li>
-                    <li><a href="{{url_for('smpp')}}">SMPP</a></li>
-                    <li><a href="{{url_for('api_documents')}}">API Documents</a></li>
+            <!-- /.user-info -->
+
+            <div class="sidebar-nav">
+                <ul class="side-nav color-gray">
+                    <li class="nav-header">
+                        <li><a href="{{url_for('dashboard')}}"><i class="fa fa-home"></i> <span>Dashboard</span></a>
+                    </li>
+
+                    <li class="nav-header">
+                        <span class="">User Administration</span>
+                    </li>
+                    <li><a href="#"><span>User Dashboard</span></a></li>
+
+                    <li><a href="#"><span>Live Traffic Report</span></a></li>
+
+                    <li><a href="#"><span>User Tree List</span></a></li>
+
+
+                    <li class="nav-header">
+                        <span class="">Approvals</span>
+                    </li>
+                    <li><a href="#"><span>All Sender Id Request</span></a></li>
+
+                    <li class="nav-header">
+                        <span class="">Settings</span>
+                    </li>
+                    <li><a href="#"><span>Manage Spam Keywords</span></a></li>
+
+                    <li><a href="#"><span>Site Branding</span></a></li>
+
+                    <li><a href="#"><span>Manage Notifications</span></a></li>
+
+                    <li><a href="#"><span>Manage Custom Control</span></a></li>
+
+                    <li class="nav-header">
+                        <span class="">Manage Channel</span>
+                    </li>
+                    <li><a href="#"><span>Long Code Channel</span></a></li>
+
+                    <li><a href="#"><span>Short Code Channel</span></a></li>
                 </ul>
             </div>
-            <!-- /.col-sm-6 -->
-            <div class="col-sm-6 text-right hidden-xs">
-                <a href="#"><i class="fa fa-headphones"></i>Customer Support: (254)702 423131</a>
-            </div>
-            <!-- /.col-sm-6 -->
+            <!-- /.sidebar-nav -->
         </div>
-        <!-- /.row -->
+        <!-- /.sidebar-content -->
     </div>
-    <!-- /.container-fluid -->
+    <!-- /.left-sidebar -->
 
-</div>
-<!-- /.main-page -->
+    <div class="main-page">
+        <div class="container-fluid">
+            <div class="row page-title-div">
+                <div>
+                    <h2 class="title"> <a href="{{url_for('dashboard')}}">Usms Dashboard</a></h2>
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class="row breadcrumb-div">
+                <div class="col-sm-6">
+                    <ul class="nav nav-tabs">
+                        <li><a href="{{url_for('dashboard')}}"><i class="fa fa-home"></i>SMS</a></li>
+                        <li class="active"><a href="{{url_for('administration')}}">Administration</a></li>
+                        <li><a href="{{url_for('smpp')}}">SMPP</a></li>
+                        <li><a href="{{url_for('api_documents')}}">API Documents</a></li>
+                    </ul>
+                </div>
+                <!-- /.col-sm-6 -->
+                <div class="col-sm-6 text-right hidden-xs">
+                    <a href="#"><i class="fa fa-headphones"></i>Customer Support: (254)702 423131</a>
+                </div>
+                <!-- /.col-sm-6 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+
+    </div>
+    <!-- /.main-page -->
 {% endblock content %}
