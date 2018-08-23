@@ -43,7 +43,7 @@ def pages_404():
 def pages_500():
     return render_template('dashboard/pages/pages-error-500.html', title='Service Error')
 
-@app.route("/pages_profile")
+@app.route("/profile")
 def profile():
     return render_template('dashboard/pages/pages-profile.html', title='User Account')    
 
