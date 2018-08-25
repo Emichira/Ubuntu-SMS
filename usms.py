@@ -9,18 +9,25 @@ app.config['SECRET_KEY'] = '18be081e801b18259fc7a92ce165329a'
 def home():
     return render_template('index.html', title='USMS')
 
-@app.route("/login")
-def login():
-    form = RegistrationForm()
-    return render_template('login.html', title='Login', form=form)
-
 @app.route("/register", methods=['GET', 'POST'])
 def register():
     form = RegistrationForm()
     if form.validate_on_submit():
         flash('Account Created for {form.username.data}!', 'success')
-        return redirect(url_for('dashboard'))
+        return redirect(url_for('login'))
     return render_template('register.html', title='Register', form=form)
+
+
+@app.route("/login", methods=['GET', 'POST'])
+def login():
+    form = LoginForm()
+    if form.validate_on_submit():
+        if form.email.data == 'usms@ubuntu.com' and form.password.data == 'iroot':
+            flash('You have been logged in!', 'success')
+            return redirect(url_for('dashboard'))
+        else:
+            flash('Login Unsuccessful. Please check username and password', 'danger')
+    return render_template('login.html', title='Login', form=form)
 
 @app.route("/contact")
 def contact():

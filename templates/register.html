@@ -65,15 +65,14 @@
                             <br>
                             <span>Free Credits for tests.</span>
                         </div>
-                        <div class="checkout-form">
-                            <form method="POST" action="">
-                                {{ form.hidden_tag() }}
+                        <form method="POST" action="" class="checkout-form">
+                            {{ form.hidden_tag() }}
                             <div class="row">
                                 <div>
                                     <p>Full Name <span>*</span></p>
                                     {% if form.username.errors %}
                                         {{ form.username(class="form-control form-control-lg is-invalid") }}
-                                        <div class="invalid-feedback">
+                                        <div class="invalid-feedback form-control">
                                             {% for error in form.username.errors %}
                                                 <span>{{ error }}</span>
                                             {% endfor %}
@@ -86,7 +85,7 @@
                                     <p>Email <span>*</span></p> 
                                     {% if form.email.errors %}
                                         {{ form.email(class="form-control form-control-lg is-invalid") }}
-                                        <div class="invalid-feedback">
+                                        <div class="invalid-feedback form-control">
                                             {% for error in form.email.errors %}
                                                 <span>{{ error }}</span>
                                             {% endfor %}
@@ -99,7 +98,7 @@
                                     <p>Phone <span>*</span></p>
                                     {% if form.phone.errors %}
                                         {{ form.phone(class="form-control form-control-lg is-invalid") }}
-                                        <div class="invalid-feedback">
+                                        <div class="invalid-feedback form-control">
                                             {% for error in form.phone.errors %}
                                                 <span>{{ error }}</span>
                                             {% endfor %}
@@ -112,7 +111,7 @@
                                     <p>Password <span>*</span></p>
                                     {% if form.password.errors %}
                                         {{ form.password(class="form-control form-control-lg is-invalid") }}
-                                        <div class="invalid-feedback">
+                                        <div class="invalid-feedback form-control">
                                             {% for error in form.password.errors %}
                                                 <span>{{ error }}</span>
                                             {% endfor %}
@@ -125,7 +124,7 @@
                                     <p>Confirm Password <span>*</span></p>
                                     {% if form.confirm_password.errors %}
                                         {{ form.confirm_password(class="form-control form-control-lg is-invalid") }}
-                                        <div class="invalid-feedback">
+                                        <div class="invalid-feedback form-control">
                                             {% for error in form.confirm_password.errors %}
                                                 <span>{{ error }}</span>
                                             {% endfor %}
@@ -139,10 +138,11 @@
                             <br>
                             <h6>By clicking the "Sign Up" button you are agreeing to the </h6>
                             <h6>USMS sending policy and Terms of Use</h6>
+                            <hr>
                             <small class="text-muted">
                                 Already Have An Account? <a class="ml-2" href="{{url_for('login') }}"> Sign In</a>
                             </small>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
