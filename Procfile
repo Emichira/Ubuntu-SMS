@@ -1,1 +1,1 @@
-web: gunicorn ubuntu-flask:app
+web: python usms.py runserver
