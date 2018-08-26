@@ -801,10 +801,6 @@ a#scrollUp i:before{
   font-size:16px;
 }
 .checkout-form a.order:hover{background:#5bc0de}
-
-.bulianfield{
-  height: 15px;
-}
 /*--------login-register-area end ----------*/
 /*--------404-area end ----------*/
 .error-wrap{
