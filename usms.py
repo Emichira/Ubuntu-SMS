@@ -5,7 +5,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = '18be081e801b18259fc7a92ce165329a'
 
 @app.route("/", methods=['GET'])
-@app.route("/home")
+@app.route("/home", methods=['GET'])
 def home():
     return render_template('index.html', title='USMS')
 
