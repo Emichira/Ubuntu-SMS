@@ -1,1 +1,1 @@
-web: python usms.py runserver
+web: gunicorn usms:app
