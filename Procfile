@@ -1,1 +1,1 @@
-web: gunicorn usms:app
+web: gunicorn ubuntu-flask:app
