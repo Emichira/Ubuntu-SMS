@@ -89,8 +89,9 @@
                                         {{ form.password(class="form-control form-control-lg") }}
                                     {% endif %}                                       
                                 </div>
-                                <div class="form-check">
-                                    <span class="col-md-4">{{ form.remember(class="form-check-input", style="height: 15px;") }}</span><p>Remeber Me</p>
+                                <div class="form-check row">
+                                    <span class="col-lg-2">{{ form.remember(class="form-check-input", style="height: 15px;") }}</span>
+                                    <span>Remeber Me</span>
                                 </div>
                             </div>
                             <a class="order">{{ form.submit(class="btn btn-outline-info")}}</a>
