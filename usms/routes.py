@@ -1,36 +1,7 @@
-from flask import Flask, render_template, url_for, flash, redirect, request
-from flask_sqlalchemy import SQLAlchemy
-from forms import RegistrationForm, LoginForm
-
-# app initiliazation
-app = Flask(__name__)
-
-# initialize our db
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:Mich$anuel1@localhost/ubuntu_usms'
-app.config['SQLALCHEMY_TRACK_NOTIFICATIONS'] = False
-app.debug = True
-db = SQLAlchemy(app)
-
-app.config['SECRET_KEY'] = '18be081e801b18259fc7a92ce165329a'
-
-class User(db.Model):
-# User class handles registration and login of users
-    id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(20), unique=True, nullable=False)
-    email = db.Column(db.String(120), unique=True, nullable=False)
-    phone = db.Column(db.Integer, unique=True)
-    image_file = db.Column(db.String(20), nullable=False, default='default.jpg')
-    password = db.Column(db.String(60), nullable=False)
-
-    def __init__(self, username, email, phone, password):
-        self.username = username
-        self.email = email
-        self.phone = phone
-        self.password = password
-
-    def __repr__(self):
-        return 'User(username=%r, email=%r, phone=%r, password=%r)' % (self.username, self.email, self.phone, self.password)
-
+from flask import render_template, url_for, flash, redirect, request
+from usms import app
+from usms.forms import RegistrationForm, LoginForm
+from usms.models import User
 
 @app.route("/", methods=['GET'])
 @app.route("/home", methods=['GET'])
@@ -88,6 +59,3 @@ def profile():
 @app.route("/smpp")
 def smpp():
     return render_template('dashboard/pages/smpp.html', title='smpp')
-
-if __name__ == '__main__':
-    app.run(debug=True)
