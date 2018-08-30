@@ -79,6 +79,7 @@
                                 <ul>
                                     <li><a href="{{url_for('contact')}}">Contact Us</a></li>
                                     {% if current_user.is_authenticated %}
+                                    <li><a href="{{url_for('dashboard')}}">Dashboard</a></li>
                                     {% else %}
                                         <li><a href="{{url_for('login')}}">Login </a></li>
                                         <li><a href="{{url_for('register')}}">Register </a></li>
