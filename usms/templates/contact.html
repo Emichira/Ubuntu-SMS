@@ -19,8 +19,14 @@
                                     <ul id="navigation">
                                         <li class="active"><a href="{{url_for('home')}}">HOME</a></li>
                                         <li><a href="{{url_for('contact')}}">CONTACT US</a></li>
-                                        <li><a href="{{url_for('login')}}"><button type="button" class="btn btn-success">LOGIN</button></a></li>   
-                                        <li><a href="{{url_for('register')}}"><button type="button" class="btn btn-primary">SIGN UP</button></a></li>   
+                                        {% if current_user.is_authenticated %}
+                                            <li><a href="{{url_for('logout')}}"><button type="button" class="btn btn-success">LOGOUT</button></a></li>   
+                                        {% else %}
+                                            <li><a href="{{url_for('login')}}"><button type="button" class="btn btn-success">LOGIN</button></a></li>   
+                                            <li><a href="{{url_for('register')}}"><button type="button" class="btn btn-primary">SIGN UP</button></a></li>   
+                                        {% endif %}
+                                        <!-- <li><a href="{{url_for('login')}}"><button type="button" class="btn btn-success">LOGIN</button></a></li>   
+                                        <li><a href="{{url_for('register')}}"><button type="button" class="btn btn-primary">SIGN UP</button></a></li>    -->
                                     </ul>
                                 </div>
                             </div>
