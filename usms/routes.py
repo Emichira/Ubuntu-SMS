@@ -2,7 +2,7 @@ from flask import render_template, url_for, flash, redirect, request
 from usms import app, db, bcrypt
 from usms.forms import RegistrationForm, LoginForm
 from usms.models import User
-from flask_login import login_user, current_user, logout_user
+from flask_login import login_user, current_user, logout_user, login_required
 
 @app.route("/", methods=['GET'])
 @app.route("/home", methods=['GET'])
@@ -48,17 +48,30 @@ def contact():
     return render_template('contact.html', title='Contact')
 
 @app.route("/dashboard")
+@login_required
 def dashboard():
     return render_template('dashboard/index.html', title='Dashboard')
 
 @app.route("/administration")
+@login_required
 def administration():
     return render_template('dashboard/pages/administration.html', title='Administration')
 
 @app.route("/api_documents")
+@login_required
 def api_documents():
     return render_template('dashboard/pages/api-documents.html', title='API Documents')
 
+@app.route("/profile")
+@login_required
+def profile():
+    return render_template('dashboard/pages/pages-profile.html', title='User Account')    
+
+@app.route("/smpp")
+@login_required
+def smpp():
+    return render_template('dashboard/pages/smpp.html', title='smpp')
+    
 @app.route("/pages_404")
 def pages_404():
     return render_template('dashboard/pages/pages-error-404.html', title='Error404')
@@ -67,10 +80,3 @@ def pages_404():
 def pages_500():
     return render_template('dashboard/pages/pages-error-500.html', title='Service Error')
 
-@app.route("/profile")
-def profile():
-    return render_template('dashboard/pages/pages-profile.html', title='User Account')    
-
-@app.route("/smpp")
-def smpp():
-    return render_template('dashboard/pages/smpp.html', title='smpp')
