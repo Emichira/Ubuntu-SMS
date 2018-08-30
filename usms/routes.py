@@ -33,7 +33,8 @@ def login():
         user = User.query.filter_by(email=form.email.data).first()
         if user and bcrypt.check_password_hash(user.password, form.password.data):
             login_user(user, remember=form.remember.data)
-            return redirect(url_for('dashboard'))
+            next_page = request.args.get('next')
+            return redirect(next_page) if (next_page) else redirect(url_for('dashboard'))
         else:
             flash('Login Unsuccessful. Please check username and password', 'danger')
     return render_template('login.html', title='Login', form=form)
@@ -71,7 +72,7 @@ def profile():
 @login_required
 def smpp():
     return render_template('dashboard/pages/smpp.html', title='smpp')
-    
+
 @app.route("/pages_404")
 def pages_404():
     return render_template('dashboard/pages/pages-error-404.html', title='Error404')
