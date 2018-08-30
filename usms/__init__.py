@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
+from flask_login import LoginManager
 
 # app initiliazation
 app = Flask(__name__)
@@ -12,5 +13,6 @@ app.config['SQLALCHEMY_TRACK_NOTIFICATIONS'] = False
 app.debug = True
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
+login_manager = LoginManager(app)
 
 from usms import routes
