@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+from flask_bcrypt import Bcrypt
 
 # app initiliazation
 app = Flask(__name__)
@@ -10,5 +11,6 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:Mich$anuel1@local
 app.config['SQLALCHEMY_TRACK_NOTIFICATIONS'] = False
 app.debug = True
 db = SQLAlchemy(app)
+bcrypt = Bcrypt(app)
 
 from usms import routes

@@ -1,5 +1,5 @@
 from flask import render_template, url_for, flash, redirect, request
-from usms import app
+from usms import app, db, bcrypt
 from usms.forms import RegistrationForm, LoginForm
 from usms.models import User
 
@@ -12,7 +12,11 @@ def home():
 def register():
     form = RegistrationForm()
     if form.validate_on_submit():
-        flash('Account Created for {form.username.data}!', 'success')
+        hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
+        user = User(username=form.username.data, email=form.email.data, phone=form.phone.data, password=hashed_password)
+        db.session.add(user)
+        db.session.commit()
+        flash('Your account has been created. You are able to Log In', 'success')
         return redirect(url_for('login'))
     return render_template('register.html', title='Register', form=form)
 
