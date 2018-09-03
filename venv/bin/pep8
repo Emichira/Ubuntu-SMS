@@ -1,4 +1,4 @@
-#!/home/emmanuel/Desktop/ubuntu-flask/venv/bin/python3
+#!/home/emmanuel/Desktop/ubuntu-flask/venv/bin/python3.6
 
 # -*- coding: utf-8 -*-
 import re

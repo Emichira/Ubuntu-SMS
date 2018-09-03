@@ -21,7 +21,6 @@ MarkupSafe==1.0
 marshmallow==2.15.4
 mccabe==0.6.1
 pep8==1.7.1
-pkg-resources==0.0.0
 psycopg2==2.7.5
 pycparser==2.18
 PyJWT==1.6.4
