@@ -9,34 +9,38 @@
         {% else %}
             <title>USMS</title>
         {% endif %}
-        <!-- Place favicon.icon in the root directory -->
-        <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png') }}">
         <!-- ========== COMMON STYLES ========== -->
         <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='dashboard/css/bootstrap.min.css') }}">
         <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='dashboard/css/font-awesome.min.css') }}">
         <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='dashboard/css/animate-css/animate.min.css') }}">
         <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='dashboard/css/lobipanel/lobipanel.min.css') }}">
+        
+
         <!-- ========== PAGE STYLES ========== -->
         <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='dashboard/css/toastr/toastr.min.css') }}">
         <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='dashboard/css/icheck/skins/line/blue.css') }}">
         <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='dashboard/css/icheck/skins/line/red.css') }}">
         <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='dashboard/css/icheck/skins/line/green.css') }}">
         <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='dashboard/css/bootstrap-tour/bootstrap-tour.css') }}">
+
+
         <!-- ========== THEME CSS ========== -->
         <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='dashboard/css/main.css') }}">
+
         <!-- ========== MODERNIZR ========== -->
         <script type="text/javascript" src="{{ url_for('static', filename='dashboard/js/modernizr/modernizr.min.js') }}"></script>
 
     </head>
     <body class="top-navbar-fixed">
         <div class="main-wrapper">
+
             <!-- ========== TOP NAVBAR ========== -->
             <nav class="navbar top-navbar bg-white box-shadow">
             	<div class="container-fluid">
                     <div class="row">
                         <div class="navbar-header no-padding">
                 			<a class="navbar-brand" href="{{url_for('home')}}">
-                			    <img src="{{ url_for('static', filename='images/logo.png') }}" class="logo">
+                			    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Options - Admin Template" class="logo">
                 			</a>
                             <span class="small-nav-handle hidden-sm hidden-xs"><i class="fa fa-outdent"></i></span>
                 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
@@ -51,8 +55,9 @@
 
                 		<div class="collapse navbar-collapse" id="navbar-collapse-1">
                 			<ul class="nav navbar-nav" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
-                                <li class="hidden-sm hidden-xs"><a href="{{url_for('contact')}}" class="user-info-handle"><i class="fa fa-envelope"></i></a></li>
+                                <li class="hidden-sm hidden-xs"><a href="#" class="user-info-handle"><i class="fa fa-user"></i></a></li>
                                 <li class="hidden-sm hidden-xs"><a href="#" class="full-screen-handle"><i class="fa fa-arrows-alt"></i></a></li>
+                                <li class="hidden-sm hidden-xs"><a href="#"><i class="fa fa-search"></i></a></li>
                 				<li class="hidden-xs hidden-xs"><a href="{{url_for('dashboard')}}">Usms Platform</a></li>
                 			</ul>
                             <!-- /.nav navbar-nav -->
@@ -60,10 +65,10 @@
                 			<ul class="nav navbar-nav navbar-right" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
                                 <li class="dropdown">
                 					<a href="#" class="dropdown-toggle tour-one" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fa fa-plus-circle"></i> Profile <span class="caret"></span>
+                                        <i class="fa fa-plus-circle"></i> Help Center <span class="caret"></span>
                                     </a>
                 					<ul class="dropdown-menu" >
-                						<li><a href="{{url_for('profile')}}"><i class="fa fa-plus-square-o"></i>View Edit Profile</a></li>
+                						<li><a href="#"><i class="fa fa-plus-square-o"></i> Service Support</a></li>
                 					</ul>
                                 </li>
                                 
