@@ -4007,7 +4007,9 @@ code:not(.language-html) {
 
 .left-sidebar .side-nav .nav-header {
   font-size: 16px;
-  background-color: #494949;
+  background-color: #08c;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(65, 34, 34, 0.15);
   text-transform: uppercase;
   padding-left: 15px;
   padding-top: 10px;
@@ -4044,6 +4046,8 @@ code:not(.language-html) {
   display: block;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+  border: 1px solid #e5e5e5;
+  margin: 5px;
 }
 
 .left-sidebar .side-nav li a:hover {
