@@ -85,16 +85,16 @@ ul{
   -webkit-transition: all .3s;
   transition: all .3s;
 }
-.bg-1{background:#ffffff;}
+.bg-1{background:#fff;}
 .bg-2{background:#131619;}
 
-.ptb-80{padding: 80px 0px}
+.ptb-80{padding: 10px 0px}
 
-.mb-30{margin-bottom: 30px;}
+.mb-30{margin-bottom: 0px;}
 
-.bg-img-4{background: url(../images/bg/4.jpg)no-repeat center center / cover}
+.bg-img-4{background: url(../images/bg/5.jpg)no-repeat center center / cover}
 .bg-img-5{background: url(../images/bg/5.jpg)no-repeat center center / cover}
-.bg-img-6{background: url(../images/bg/6.jpg)no-repeat center center / cover}
+.bg-img-6{background: url(../images/bg/5.jpg)no-repeat center center / cover}
 
 .black-opacity{
   position: relative;
@@ -114,6 +114,7 @@ ul{
 }
 /*---------header-area start---------*/
 .header-area{
+  background-color: #0d0f11;
   position: fixed;
   top: 0;
   width: 100%;
@@ -181,7 +182,7 @@ ul{
   color: #fb9902;
 }
 .header-area.sticky{
-  background: #0d0f11;
+  /* background: 0d0f11; */
   box-shadow: 0px 1px 3px rgba(0,0,0,.2);
   transition: all 0.5s ease 0s;
   animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
@@ -388,7 +389,7 @@ ul{
 /*---------slider-area end---------*/
 /*-------------------breadcumb-area start-------------------*/
 .breadcumb-area{
-  height: 450px;
+  height: 160px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -756,7 +757,7 @@ a#scrollUp i:before{
 .katikati{
   text-align: center;
   font-weight: bold;
-  background-color: #131619;
+  background-color: #333;
 }
 .checkout-title{
   padding:20px 30px;
@@ -768,8 +769,11 @@ a#scrollUp i:before{
   margin-bottom:0px;
 }
 .checkout-form{
-  background:#131619;
+  /* background:#333; */
   padding:30px 30px 30px;
+  border-color: #fb9902;
+  border-width: thin;
+  border-style: groove;
 }
 .checkout-form p, .checkout-form span{
   color:#fb9902;
