@@ -3820,7 +3820,7 @@ code:not(.language-html) {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   overflow: hidden;
-  background-color: #fb9902;
+  background-color: #d9d9d9;
 }
 
 .navbar-header .navbar-brand {
@@ -3911,7 +3911,7 @@ code:not(.language-html) {
     top: 0;
     left: 0;
     z-index: 10;
-    background-color: #fb9902;
+    background-color: #d9d9d9;
   }
   .top-navbar-fixed .content-wrapper {
     margin-top: 50px;
@@ -4203,7 +4203,7 @@ code:not(.language-html) {
 }
 
 .page-title-div {
-  background: #fff;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.1);
   padding: 15px;
 }
 
