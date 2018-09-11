@@ -48,6 +48,10 @@ def logout():
 def contact():
     return render_template('contact.html', title='Contact')
 
+@app.route("/database")
+def database():
+    return render_template('dashboard/pages/sample-database.html', title='Database')
+
 @app.route("/dashboard")
 @login_required
 def dashboard():

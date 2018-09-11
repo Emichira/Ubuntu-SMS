@@ -3919,6 +3919,13 @@ code:not(.language-html) {
 }
 
 /*--------------------------------------------------------------
+# MAIN PAGE CONTAINER
+--------------------------------------------------------------*/
+.kontainer{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/*--------------------------------------------------------------
 # SIDEBARS
 --------------------------------------------------------------*/
 .content-wrapper {
@@ -3950,7 +3957,7 @@ code:not(.language-html) {
     transition: all 0.4s ease-in-out;
   }
   .left-sidebar {
-    width: 270px;
+    width: 245px;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
   }
@@ -4007,7 +4014,8 @@ code:not(.language-html) {
 
 .left-sidebar .side-nav .nav-header {
   font-size: 16px;
-  background-color: #494949;
+  background-color: #08c;
+  color: #fff;
   text-transform: uppercase;
   padding-left: 15px;
   padding-top: 10px;
@@ -4019,7 +4027,8 @@ code:not(.language-html) {
 }
 
 .left-sidebar .side-nav a {
-  color: inherit;
+  color: rgb(12, 70, 158);
+  background-color: #fff;
 }
 
 .left-sidebar .side-nav li {
@@ -4044,6 +4053,7 @@ code:not(.language-html) {
   display: block;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+  border: 1px solid #e5e5e5;
 }
 
 .left-sidebar .side-nav li a:hover {
@@ -4157,10 +4167,11 @@ code:not(.language-html) {
 @media (min-width: 991px) {
   .left-sidebar.fixed-sidebar .sidebar-content {
     position: fixed;
-    width: 270px;
+    width: 245px;
     height: calc(100% - 50px);
     overflow: scroll;
     overflow-x: hidden;
+    line-height: 20px;
   }
   .left-sidebar.small-nav .sidebar-content {
     width: 50px;
